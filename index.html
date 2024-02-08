@@ -33,14 +33,6 @@
 	<div class="top">
 			<div class="container">
 				<div class="t-op row">
-					<div id="main">
-						<p>现在时间：</p>
-						<div id="show_time">
-						<script>
-							//setInterval("show_time.innerHTML= new Date().toLocaleString()",1000);
-							setInterval("show_time.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
-						</script>
-						</div>
 					</div>
 					<div class="col-sm-6 top-middle">
 					<div class="col-sm-6 top-left">
@@ -61,7 +53,15 @@
 				    aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-
+				<!-- 通过系统抓取时间 -->
+						<p>现在时间：</p>
+						<div id="main">
+						<div id="show_time">
+						<script>
+							//setInterval("show_time.innerHTML= new Date().toLocaleString()",1000);
+							setInterval("show_time.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
+						</script>
+						</div>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav text-center  ml-lg-auto">
 						<li class="nav-item active  mr-3">
